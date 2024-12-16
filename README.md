@@ -1,46 +1,44 @@
-# Getting Started with Create React App
+# 🌍 Local Vibes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Local Vibes** is a React application for visualizing events on an interactive map.  
+The app allows users to search for events based on keywords and locations, view event details directly on the map, and
+navigate through events with ease.  
+It provides features such as clustering markers, displaying event details in popups, and an integrated location search
+with autocomplete.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+### 🗺️ Event Management
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Event Visualization**: Displays events on a map using interactive markers.
+- **Marker Clustering**: Groups markers together for events in nearby locations, with dynamic zoom-based expansion.
+- **Event Details**: Shows event details (e.g., name, date, image) in a popup when clicking on a marker.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 🔍 Search and Filters
 
-### `npm test`
+- **Location Search**: Users can search for locations with an autocomplete feature powered by OpenStreetMap's Nominatim
+  API.
+- **Keyword Search**: Filter events based on search terms like event name or description.
+- **Date Range Filter**: Refine events displayed by selecting a specific date range.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 📦 Pagination and Data Handling
 
-### `npm run build`
+- **Incremental Pagination**: Fetch and load more events dynamically when navigating through pages.
+- **Smart Fetching**: Ensures the event list is updated only when search filters change or new data is required.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### ⭐ Favorites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Favorite Events**: Mark events as favorites for quick access.
+- **Favorites View**: A dedicated section to view and manage all your favorite events.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### UI and User Experience
 
-### `npm run eject`
+- **Responsive Design**: Optimized for different screen sizes using Tailwind CSS.
+- **Map and List Synchronization**: Hovering over events in the list highlights the corresponding marker on the map.
+- **Loading Indicators**: Displays loading spinners during data fetches for
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 🖥️ Live Demo
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Link to the live app: [https://local-vibes.vercel.app/](https://local-vibes.vercel.app/)
